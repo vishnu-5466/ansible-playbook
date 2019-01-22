@@ -1,0 +1,15 @@
+# simple ansible playbook.yml
+
+ -
+  name: playbook
+  hosts: db2
+  tasks:
+  - name: install latest version of apache
+    yum:
+       name: tomcat
+       state: latest
+
+  - name: start tomcat service
+    service:
+            name: tomcat
+            state: started 

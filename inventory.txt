@@ -1,0 +1,10 @@
+
+db1 anisble_host=192.168.100.240 ansible_connection=ssh ansible_user=root ansible_ssh_pass=vijju@1991
+ 
+db2 ansible_host=192.168.100.250 ansible_connection=ssh ansible_user=root ansible_ssh_pass=vijju@1991
+
+[webserver]
+db1
+
+[dbserver]
+db
